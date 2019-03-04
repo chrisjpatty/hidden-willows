@@ -1,0 +1,107 @@
+{
+  "entry": "/Users/chrisjpatty/projects/hidden-willows/src/index.js",
+  "prefetchRate": 5,
+  "maxThreads": null,
+  "disableRoutePrefixing": false,
+  "outputFileRate": 100,
+  "extensions": [
+    ".js",
+    ".jsx"
+  ],
+  "minLoadTime": 200,
+  "disablePreload": false,
+  "disableRuntime": false,
+  "preloadPollInterval": 300,
+  "paths": {
+    "ROOT": "/Users/chrisjpatty/projects/hidden-willows",
+    "LOCAL_NODE_MODULES": "/Users/chrisjpatty/projects/hidden-willows/node_modules/react-static/node_modules",
+    "SRC": "/Users/chrisjpatty/projects/hidden-willows/src",
+    "PAGES": "/Users/chrisjpatty/projects/hidden-willows/src/pages",
+    "DIST": "/Users/chrisjpatty/projects/hidden-willows/dist",
+    "ASSETS": "/Users/chrisjpatty/projects/hidden-willows/dist",
+    "PLUGINS": "/Users/chrisjpatty/projects/hidden-willows/plugins",
+    "TEMP": "/Users/chrisjpatty/projects/hidden-willows/tmp",
+    "BUILD_ARTIFACTS": "/Users/chrisjpatty/projects/hidden-willows/artifacts",
+    "PUBLIC": "/Users/chrisjpatty/projects/hidden-willows/public",
+    "NODE_MODULES": "/Users/chrisjpatty/projects/hidden-willows/node_modules",
+    "EXCLUDE_MODULES": "/Users/chrisjpatty/projects/hidden-willows/node_modules",
+    "PACKAGE": "/Users/chrisjpatty/projects/hidden-willows/package.json",
+    "HTML_TEMPLATE": "/Users/chrisjpatty/projects/hidden-willows/dist/index.html",
+    "STATIC_DATA": "/Users/chrisjpatty/projects/hidden-willows/dist/staticData"
+  },
+  "plugins": [
+    {
+      "location": "/Users/chrisjpatty/projects/hidden-willows",
+      "options": {},
+      "hooks": {}
+    }
+  ],
+  "babelExcludes": [],
+  "siteRoot": "",
+  "basePath": "",
+  "publicPath": "/",
+  "assetsPath": "",
+  "extractCssChunks": false,
+  "inlineCss": false,
+  "routes": [
+    {
+      "path": "404",
+      "component": "src/pages/404.js",
+      "isPage": true,
+      "originalPath": "404",
+      "hasGetProps": false,
+      "fromConfig": false,
+      "template": "../src/pages/404.js"
+    },
+    {
+      "path": "blog",
+      "component": "src/pages/blog.js",
+      "isPage": true,
+      "originalPath": "blog",
+      "hasGetProps": false,
+      "fromConfig": false,
+      "template": "../src/pages/blog.js"
+    },
+    {
+      "path": "/",
+      "component": "src/pages/index.js",
+      "isPage": true,
+      "originalPath": "/",
+      "hasGetProps": true,
+      "fromConfig": true,
+      "template": "../src/pages/index.js"
+    },
+    {
+      "path": "openings",
+      "component": "src/pages/openings.js",
+      "isPage": true,
+      "originalPath": "openings",
+      "hasGetProps": true,
+      "fromConfig": true,
+      "template": "../src/pages/openings.js"
+    },
+    {
+      "path": "apply",
+      "component": "src/pages/openings",
+      "originalPath": "apply",
+      "hasGetProps": true,
+      "fromConfig": true,
+      "template": "../src/pages/openings"
+    },
+    {
+      "path": "contact",
+      "component": "src/pages/openings",
+      "originalPath": "contact",
+      "hasGetProps": true,
+      "fromConfig": true,
+      "template": "../src/pages/openings"
+    }
+  ],
+  "templates": [
+    "../src/pages/404.js",
+    "../src/pages/blog.js",
+    "../src/pages/index.js",
+    "../src/pages/openings.js",
+    "../src/pages/openings"
+  ]
+}

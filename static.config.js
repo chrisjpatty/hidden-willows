@@ -62,6 +62,20 @@ export default {
           openings
         }),
       },
+      {
+        path: '/apply',
+        component: 'src/pages/openings',
+        getData: () => ({
+          openings
+        }),
+      },
+      {
+        path: '/contact',
+        component: 'src/pages/openings',
+        getData: () => ({
+          openings
+        }),
+      },
     ]
   },
 }

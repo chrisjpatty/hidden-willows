@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@reach/router": "^1.2.1",
+    "acorn": "^6.1.1",
     "axios": "^0.18.0",
     "gray-matter": "^4.0.2",
     "klaw": "^3.0.0",
@@ -19,7 +20,7 @@
     "react-dom": "^16.8.1",
     "react-hot-loader": "^4.3.12",
     "react-spring": "^8.0.10",
-    "react-static": "^6.0.18"
+    "react-static": "^6.3.6"
   },
   "devDependencies": {
     "babel-eslint": "9.x",
