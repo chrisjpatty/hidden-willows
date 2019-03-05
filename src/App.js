@@ -2,7 +2,7 @@ import React from "react";
 import { Root, Routes } from "react-static";
 import { Location } from "@reach/router";
 import Header from "./components/Header";
-import { Transition, animated } from "react-spring/renderprops";
+import { Transition, animated } from "react-spring";
 import "normalize.css";
 import "./app.css";
 

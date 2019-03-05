@@ -54,15 +54,6 @@
       "template": "../src/pages/404.js"
     },
     {
-      "path": "blog",
-      "component": "src/pages/blog.js",
-      "isPage": true,
-      "originalPath": "blog",
-      "hasGetProps": false,
-      "fromConfig": false,
-      "template": "../src/pages/blog.js"
-    },
-    {
       "path": "/",
       "component": "src/pages/index.js",
       "isPage": true,
@@ -99,7 +90,6 @@
   ],
   "templates": [
     "../src/pages/404.js",
-    "../src/pages/blog.js",
     "../src/pages/index.js",
     "../src/pages/openings.js",
     "../src/pages/openings"
