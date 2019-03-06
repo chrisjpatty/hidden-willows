@@ -62,13 +62,13 @@ export default {
           openings
         }),
       },
-      // {
-      //   path: '/apply',
-      //   component: 'src/pages/openings',
-      //   getData: () => ({
-      //     openings
-      //   }),
-      // },
+      {
+        path: '/rates',
+        component: 'src/pages/rates',
+        getData: () => ({
+          openings
+        }),
+      },
       {
         path: '/contact',
         component: 'src/pages/config',

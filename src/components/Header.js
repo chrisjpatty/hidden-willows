@@ -16,6 +16,10 @@ let Header = ({location: { pathname }}) => {
           Photos
           <AnimatedIndicator isActive={pathname === "/"} />
         </Link>
+        <Link to="/rates">
+          Rates & Amenities
+          <AnimatedIndicator isActive={pathname === "/rates"} />
+        </Link>
         <Link to="/openings">
           Openings <AnimatedIndicator isActive={pathname === "/openings"} />
         </Link>

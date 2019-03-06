@@ -17,9 +17,9 @@ const App = props => {
               <Transition
                 native
                 items={routePath}
-                from={{ transform: "translateY(100px)", opacity: 0 }}
-                enter={{ transform: "translateY(0px)", opacity: 1 }}
-                leave={{ transform: "translateY(100px)", opacity: 0 }}
+                from={{ transform: "translateX(-100px)", opacity: 0 }}
+                enter={{ transform: "translateX(0px)", opacity: 1 }}
+                leave={{ transform: "translateX(-100px)", opacity: 0 }}
               >
                 {item => props => {
                   const Comp = getComponentForPath(item);

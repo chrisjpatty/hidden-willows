@@ -5,6 +5,7 @@
 body{
   background: #f2efeb;
   overflow-y: scroll;
+  font-family: 'Unna', cursive;
 }
 .page-wrapper{
   display: flex;
@@ -66,8 +67,9 @@ header{
   width: 40vw;
   height: 100%;
   background: #f2efeb;
-  box-shadow: 3px 0px 10px rgba(0,0,0,.3);
+  box-shadow: 3px 0px 6px -2px rgba(0,0,0,.3);
   z-index: 9;
+  border-right: 1px solid #fff;
 }
 header .logo-wrapper{
   padding: 4vw;
@@ -130,6 +132,7 @@ header nav a{
   top: 0px;
   width: 100%;
   display: flex;
+  will-change: transform, opacity;
 }
 .openings{
   width: 100%;
@@ -157,15 +160,20 @@ header nav a{
   padding: 16px;
   padding-top: 15px;
 }
-.opening-block .phone{
+.opening-block a{
+  text-decoration: none;
   margin-left: auto;
+}
+.opening-block .phone{
   font-size: 22px;
-  background: #a2bd77;
-  border-bottom: 1px solid #a0a668;
+  background: #cfd8b5;
+  border-bottom: 1px solid #c0c68c;
+  border-top: 1px solid #e7eed3;
   color: #22250a;
   height: 100%;
   padding: 20px;
   border-radius: 0px 3px 3px 0px;
+  text-decoration: none;
 }
 .cta-wrapper{
   margin-top: 0px;
@@ -214,4 +222,134 @@ header nav a{
   width: 100%;
   height: 5px;
   /* opacity: .8; */
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 30px;
+}
+.price-wrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #cfd8b5;
+  border-top: 1px solid #edf4db;
+  border-radius: 6px;
+  box-shadow: 0px 2px 3px -2px rgba(0,0,0,.4);
+  color: #22250a;
+  margin-top: 30px;
+}
+.price-wrapper .months{
+  padding: 15px;
+  font-size: 42px;
+  font-weight: 600;
+}
+.price-box{
+  padding: 15px;
+  font-size: 42px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 10px;
+}
+.price-box .caption{
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.price-box .dollar{
+  font-weight: 400;
+  font-size: 26px;
+  opacity: .5;
+  margin-right: 5px;
+}
+.amenities{
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.amenities li{
+  position: relative;
+  list-style: none;
+  font-size: 22px;
+  text-align: center;
+  padding: 5px 15px;;
+  border-radius: 4px;
+  background: #fbf6f0;
+  margin: 10px;
+  border-top: 1px solid #efece8;
+  box-shadow: 0px 1px 2px -1px rgba(0,0,0,.4);
+}
+.amenities li::before{
+  content: "+";
+  color: rgb(121, 152, 68);
+  line-height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -8px;
+  top: 10px;
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+  background: #c5d88d;
+  border-top: 1px solid #e7f4c3;
+  font-size: 18px;
+  box-shadow: 0px 1px 2px -1px rgba(0,0,0,.4);
+}
+.contact .title{
+  font-weight: 400;
+}
+.contact .name{
+  font-size: 42px;
+  margin: 0px;
+  margin-bottom: .4em;
+}
+.contact .phone, .contact .email{
+  margin: 0px;
+  font-size: 18px;
+}
+.contact .phone{
+  margin-top: .2em;
+}
+.contact .email{
+  margin-top: .2em;
+}
+.contact{
+  height: 100%;
+}
+h1.route-title{
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  margin: 0px;
+  color: #9c8f83;
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+h1.route-title .title-image-wrapper{
+  opacity: .5;
+}
+h1.route-title img.stroke{
+  opacity: .5;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+}
+h1.route-title img.willow{
+  position: absolute;
+  left: calc(50% - 30px);
+  bottom: -9px;
+  width: 60px;
+  z-index: 5;
+}
+.opening-title.opening-title{
+  margin-bottom: 40px;
 }
