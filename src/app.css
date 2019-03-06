@@ -370,11 +370,11 @@ h1.route-title img.willow{
     padding: 0px;
   }
   .route-wrapper{
-    padding-bottom: 15vh;
+    padding-bottom: 10vh;
   }
   footer{
     position: absolute;
-    bottom: 5vh;
+    bottom: 3.5vh;
     left: 0px;
     width: 100%;
     display: flex;
