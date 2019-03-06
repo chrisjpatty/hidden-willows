@@ -62,16 +62,16 @@ export default {
           openings
         }),
       },
-      {
-        path: '/apply',
-        component: 'src/pages/openings',
-        getData: () => ({
-          openings
-        }),
-      },
+      // {
+      //   path: '/apply',
+      //   component: 'src/pages/openings',
+      //   getData: () => ({
+      //     openings
+      //   }),
+      // },
       {
         path: '/contact',
-        component: 'src/pages/openings',
+        component: 'src/pages/config',
         getData: () => ({
           openings
         }),

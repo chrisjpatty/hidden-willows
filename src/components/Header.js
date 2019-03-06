@@ -24,7 +24,7 @@ let Header = ({location: { pathname }}) => {
           Contact <AnimatedIndicator isActive={pathname === "/contact"} />
         </Link>
         <div className="cta-wrapper">
-          <button>Apply Today</button>
+          <a href="/application.pdf" target="_blank" rel="noopener noreferrer">Apply Today</a>
         </div>
       </nav>
     </header>
