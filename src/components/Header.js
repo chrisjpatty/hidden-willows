@@ -1,11 +1,11 @@
 import React from "react";
-import { Link } from '@reach/router'
+import { Link } from "@reach/router";
 import { Spring } from "react-spring";
 import logo from "../img/logo.svg";
-import Willow from '../img/willow.svg'
-import Stroke from '../img/stroke.svg'
+import Willow from "../img/willow.svg";
+import Stroke from "../img/stroke.svg";
 
-let Header = ({location: { pathname }}) => {
+let Header = ({ location: { pathname }, isOpen, isShort, toggleMenu }) => {
   return (
     <header>
       <div className="logo-wrapper">
@@ -24,13 +24,19 @@ let Header = ({location: { pathname }}) => {
           Openings <AnimatedIndicator isActive={pathname === "/openings"} />
         </Link>
         {/* <Link to="/apply">
-          Apply <AnimatedIndicator isActive={pathname === "/apply"} />
-        </Link> */}
+            Apply <AnimatedIndicator isActive={pathname === "/apply"} />
+          </Link> */}
         <Link to="/contact">
           Contact <AnimatedIndicator isActive={pathname === "/contact"} />
         </Link>
         <div className="cta-wrapper">
-          <a href="/application.pdf" target="_blank" rel="noopener noreferrer">Apply Today</a>
+          <a
+            href="/application.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Apply Today
+          </a>
         </div>
       </nav>
       <div className="willow-stroke">

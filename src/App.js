@@ -1,15 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import { Root, Routes } from "react-static";
 import { Location } from "@reach/router";
 import Header from "./components/Header";
+import Footer from './components/Footer'
+import MobileHeader from "./components/MobileHeader";
+import { useMedia } from "react-use-media";
 import { Transition, animated } from "react-spring";
 import "normalize.css";
 import "./app.css";
 
 const App = props => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => setIsOpen(s => !s);
+
+  const isShort = useMedia({
+    maxWidth: 900
+  });
   return (
     <Root>
-      <Location>{props => <Header {...props} />}</Location>
+      {
+        isShort &&
+        <MobileHeader />
+      }
+      <Location>
+        {props => (
+          <Header
+            isShort={isShort}
+            toggleMenu={toggleMenu}
+            isOpen={isOpen}
+            {...props}
+          />
+        )}
+      </Location>
       <div className="content">
         <div className="inner-wrapper">
           <Routes>
@@ -25,7 +48,11 @@ const App = props => {
                   const Comp = getComponentForPath(item);
                   return (
                     <animated.div className="route-wrapper" style={props}>
-                      <Comp />
+                      <Comp isShort={isShort} />
+                      {
+                        isShort &&
+                        <Footer />
+                      }
                     </animated.div>
                   );
                 }}
