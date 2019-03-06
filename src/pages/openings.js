@@ -1,11 +1,14 @@
 import React from 'react'
-import { withRouteData } from 'react-static'
+import { withRouteData, Head } from 'react-static'
 import Title from '../components/Title'
 
 const Openings = ({openings}) => {
   const ops = openings.map(op => op.data)
   return (
     <div className="flex-column">
+      <Head>
+        <title>Openings | Hidden Willows Townhomes</title>
+      </Head>
       <Title className="opening-title">Openings</Title>
       {
         ops.length > 0 ?

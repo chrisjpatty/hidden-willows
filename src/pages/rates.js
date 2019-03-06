@@ -1,10 +1,13 @@
 import React from "react";
-import { withRouteData } from "react-static";
+import { withRouteData, Head } from "react-static";
 import Title from '../components/Title'
 
 const Rates = ({ openings }) => {
   return (
     <div className="flex-column">
+      <Head>
+        <title>Rates & Amenities | Hidden Willows Townhomes</title>
+      </Head>
       <Title>Rates & Amenities</Title>
       <div className="price-wrapper">
         <span className="months">12</span> month lease for{" "}

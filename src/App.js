@@ -24,6 +24,7 @@ const App = props => {
         <MobileHeader />
       }
       <Head>
+        <title>Hidden Willows Townhomes</title>
         <meta name="theme-color" content="#2f2414" />
       </Head>
       <Location>

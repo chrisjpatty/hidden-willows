@@ -1,10 +1,13 @@
 import React from "react";
-import { withRouteData } from "react-static";
+import { withRouteData, Head } from "react-static";
 import Title from '../components/Title'
 
 const Contact = ({ openings }) => {
   return (
     <div className="flex-column contact">
+      <Head>
+        <title>Contact | Hidden Willows Townhomes</title>
+      </Head>
       <Title>Contact</Title>
       <h2 className="title">For questions, contact:</h2>
       <p className="name">Jaime Seamons</p>
