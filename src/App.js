@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Root, Routes } from "react-static";
+import { Root, Routes, Head } from "react-static";
 import { Location } from "@reach/router";
 import Header from "./components/Header";
 import Footer from './components/Footer'
@@ -23,6 +23,9 @@ const App = props => {
         isShort &&
         <MobileHeader />
       }
+      <Head>
+        <meta name="theme-color" content="#2f2414" />
+      </Head>
       <Location>
         {props => (
           <Header
