@@ -444,6 +444,7 @@ h1.route-title img.willow{
   margin: 0px 5px;
   text-decoration: none;
   opacity: .7;
+  white-space: nowrap;
 }
 .mobile-header nav a.active{
   opacity: 1;
