@@ -3,7 +3,6 @@ import { withRouteData } from 'react-static'
 
 const Openings = ({openings}) => {
   const ops = openings.map(op => op.data)
-  console.log(ops);
   return (
     <div className="openings">
       {

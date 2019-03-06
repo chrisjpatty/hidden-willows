@@ -4,6 +4,7 @@
 }
 body{
   background: #f2efeb;
+  overflow-y: scroll;
 }
 .page-wrapper{
   display: flex;
@@ -64,6 +65,9 @@ header{
   top: 0;
   width: 40vw;
   height: 100%;
+  background: #f2efeb;
+  box-shadow: 3px 0px 10px rgba(0,0,0,.3);
+  z-index: 9;
 }
 header .logo-wrapper{
   padding: 4vw;
@@ -156,10 +160,25 @@ header nav a{
 .opening-block .phone{
   margin-left: auto;
   font-size: 22px;
-  background: #b6bd77;
+  background: #a2bd77;
   border-bottom: 1px solid #a0a668;
   color: #22250a;
   height: 100%;
   padding: 20px;
   border-radius: 0px 3px 3px 0px;
+}
+.cta-wrapper{
+  margin-top: 20px;
+}
+.cta-wrapper button{
+  font-size: 24px;
+  text-transform: uppercase;
+  padding: 7px 15px;
+  border-radius: 24px;
+  background: none;
+  border: 2px solid #22250a;
+  color: #22250a;
+}
+.cta-wrapper button:hover{
+  background: rgba(34, 37, 10, 0.14);
 }

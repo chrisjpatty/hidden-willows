@@ -11,18 +11,21 @@ let Header = ({location: { pathname }}) => {
       </div>
       <nav>
         <Link to="/">
-          Home
+          Photos
           <AnimatedIndicator isActive={pathname === "/"} />
         </Link>
         <Link to="/openings">
           Openings <AnimatedIndicator isActive={pathname === "/openings"} />
         </Link>
-        <Link to="/apply">
+        {/* <Link to="/apply">
           Apply <AnimatedIndicator isActive={pathname === "/apply"} />
-        </Link>
+        </Link> */}
         <Link to="/contact">
           Contact <AnimatedIndicator isActive={pathname === "/contact"} />
         </Link>
+        <div className="cta-wrapper">
+          <button>Apply Today</button>
+        </div>
       </nav>
     </header>
   );
