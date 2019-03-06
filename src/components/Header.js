@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from '@reach/router'
 import { Spring } from "react-spring";
 import logo from "../img/logo.svg";
+import Willow from '../img/willow.svg'
+import Stroke from '../img/stroke.svg'
 
 let Header = ({location: { pathname }}) => {
   return (
@@ -27,6 +29,10 @@ let Header = ({location: { pathname }}) => {
           <a href="/application.pdf" target="_blank" rel="noopener noreferrer">Apply Today</a>
         </div>
       </nav>
+      <div className="willow-stroke">
+        <img className="willow" src={Willow} aria-hidden="true" />
+        <img className="stroke" src={Stroke} aria-hidden="true" />
+      </div>
     </header>
   );
 };
