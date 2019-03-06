@@ -146,7 +146,7 @@ header nav a{
 .opening-block{
   width: 100%;
   max-width: 400px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
