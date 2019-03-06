@@ -27,16 +27,19 @@ const App = props => {
         <title>Hidden Willows Townhomes</title>
         <meta name="theme-color" content="#2f2414" />
       </Head>
-      <Location>
-        {props => (
-          <Header
-            isShort={isShort}
-            toggleMenu={toggleMenu}
-            isOpen={isOpen}
-            {...props}
-          />
-        )}
-      </Location>
+      {
+        !isShort &&
+        <Location>
+          {props => (
+            <Header
+              isShort={isShort}
+              toggleMenu={toggleMenu}
+              isOpen={isOpen}
+              {...props}
+            />
+          )}
+        </Location>
+      }
       <div className="content">
         <div className="inner-wrapper">
           <Routes>
