@@ -71,10 +71,17 @@ export default {
       },
       {
         path: '/contact',
-        component: 'src/pages/config',
+        component: 'src/pages/contact',
         getData: () => ({
           openings
         }),
+      },
+      {
+        path: '/apply',
+        component: 'src/pages/apply',
+        getData: () => ({
+          openings
+        })
       },
     ]
   },

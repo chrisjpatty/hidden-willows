@@ -29,7 +29,12 @@ let Header = ({ location: { pathname }, isOpen, isShort, toggleMenu }) => {
         <Link to="/contact">
           Contact <AnimatedIndicator isActive={pathname === "/contact"} />
         </Link>
-        <div className="cta-wrapper">
+        <div className='cta-wrapper'>
+          <Link to="/apply">
+            Apply
+          </Link>
+        </div>
+        {/* <div className="cta-wrapper">
           <a
             href="/application.pdf"
             target="_blank"
@@ -37,7 +42,7 @@ let Header = ({ location: { pathname }, isOpen, isShort, toggleMenu }) => {
           >
             Apply Today
           </a>
-        </div>
+        </div> */}
       </nav>
       <div className="willow-stroke">
         <img className="willow" src={Willow} aria-hidden="true" />

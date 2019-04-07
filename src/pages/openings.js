@@ -2,7 +2,7 @@ import React from 'react'
 import { withRouteData, Head } from 'react-static'
 import Title from '../components/Title'
 
-const Openings = ({openings}) => {
+const Openings = ({openings=[]}) => {
   const ops = openings.map(op => op.data)
   return (
     <div className="flex-column">
