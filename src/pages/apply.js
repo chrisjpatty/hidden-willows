@@ -1,18 +1,26 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { withRouteData, Head } from "react-static";
 import Title from '../components/Title'
 
 const Apply = () => {
+  const emailInput = useRef()
+
+  const sendEmail = () => {
+    fetch('/.netlify/functions/email', {
+      method: 'POST',
+      body: JSON.stringify(emailInput.current.value)
+    })
+  }
+
   return (
     <div className="flex-column apply">
       <Head>
         <title>Apply | Hidden Willows Townhomes</title>
       </Head>
       <Title>Apply</Title>
-      <form name="apply" method="post" action="javascript:alert('Success');" data-netlify="true" data-netlify-honeypot="bot-field">
-        <input type="hidden" name="form-name" value="apply" />
-        <input type='email' name='email'/>
-        <button type='submit'>Request Application</button>
+      <form>
+        <input type='email' name='email' ref={emailInput}/>
+        <button type='button' onClick={sendEmail}>Request Application</button>
       </form>
     </div>
   )
