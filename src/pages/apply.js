@@ -9,7 +9,7 @@ const Apply = () => {
         <title>Apply | Hidden Willows Townhomes</title>
       </Head>
       <Title>Apply</Title>
-      <form name="apply" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+      <form name="apply" method="post" action="javascript:alert('Success');" data-netlify="true" data-netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="apply" />
         <input type='email' name='email'/>
         <button type='submit'>Request Application</button>
