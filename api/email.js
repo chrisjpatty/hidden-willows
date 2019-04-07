@@ -2,8 +2,6 @@ var nodemailer = require("nodemailer");
 
 exports.handler = function(event, context, callback) {
   const email = JSON.parse(event.body).email;
-  console.log(email);
-  console.log(event.body);
   var transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
@@ -15,7 +13,7 @@ exports.handler = function(event, context, callback) {
   var mailOptions = {
     from: process.env.EMAIL,
     to: process.env.EMAIL_TO,
-    subject: "New application request",
+    subject: `New application request from: ${email}`,
     text: `Someone just requested a application be sent to this email: ${email}`
   };
 
