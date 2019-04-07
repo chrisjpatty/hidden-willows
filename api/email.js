@@ -2,6 +2,8 @@ var nodemailer = require("nodemailer");
 
 exports.handler = function(event, context, callback) {
   const email = JSON.parse(event.body).email;
+  console.log(email);
+  console.log(event.body);
   var transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
