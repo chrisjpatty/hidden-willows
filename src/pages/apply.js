@@ -8,7 +8,7 @@ const Apply = () => {
   const sendEmail = () => {
     fetch('/.netlify/functions/email', {
       method: 'POST',
-      body: JSON.stringify(emailInput.current.value)
+      body: JSON.stringify({email: emailInput.current.value})
     })
   }
 
